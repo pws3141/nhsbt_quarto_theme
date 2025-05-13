@@ -1,2 +1,3 @@
-# nhsbt_quarto_theme
-NHS Blood &amp; Transplant theme for Quarto articles and books
+# NHS Blood & Transplant Quarto Themes
+
+This repo contains NHSBT themes to produce consistent Quarto books and articles.
