@@ -1,0 +1,85 @@
+/*-- scss:defaults --*/
+
+// Colors
+$cream: #FFFEE8;
+$gray: #dee2e6;
+$purple: #9158A2;
+$orange: #ad7237;
+$blue: #005EB8;
+$bluegrey: #DBE1F1;
+$greynurse: #f0f3f0;
+$greyperwinkle: #edf0f8;
+
+$body-bg: $greyperwinkle; // page background
+$body-color: black;
+$sidebar-bg: $blue;     // already have the background
+$sidebar-fg: white;   // <- text (links, headings) in the sidebar
+
+$link-color: $purple; // hyperlinks
+$navbar-bg: #005EB8;
+
+// import font: set in 'mainfont' in __quarto
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+/*-- scss:rules --*/
+.title {
+    font-size: 28px;
+    font-weight: lighter;
+}
+  
+h1, .h1 {
+    font-size:30px;
+    font-weight:600;
+}
+  
+h2, .h2 {
+   font-size:20px;
+   font-weight:600;
+}
+  
+h3, .h3 {
+   font-size:18px;
+   font-weight:600;
+}
+
+p {
+  text-align: justify; // justify paragraph text
+}
+
+#quarto-sidebar {
+  // text color to white
+  color: $sidebar-fg;
+}
+
+// change the magifying glass in top nav bar to be white
+.quarto-search-button {      /* the <button> itself */
+  color: $sidebar-fg; /* icon inherits this colour */
+}
+
+// chapter number in sidebar
+.sidebar-item .chapter-number {
+  color: $sidebar-fg;
+  // bold text
+  font-weight: bold;
+}
+
+
+//.content {
+  //background color
+//  background-color: white;
+//}
+
+.sidebar-header-stacked .sidebar-title {
+    margin-top: 1rem;
+}
+
+.sidebar-logo img {    /* Quarto sets class="sidebar-logo" */
+  max-width: 140px;    /* keep it from getting too large */
+  height: auto;
+}
+
+body {
+   -moz-osx-font-smoothing:grayscale;
+   -webkit-font-smoothing:antialiased;
+}

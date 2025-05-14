@@ -1,0 +1,8 @@
+# Foreword {.unnumbered}
+
+For some light reading, see @tufte2006cognitive.
+
+{{< lipsum 2 random=true >}}
+
+**Paul Smith**<br>
+Statistician – NHS Blood and Transplant

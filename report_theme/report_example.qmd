@@ -1,0 +1,50 @@
+---
+title: "<br>An Example Report"
+author: 
+  - name: Paul Smith
+    email: paul.smith9@nhsbt.nhs.uk
+date: today
+format: 
+  html:
+    ## Required
+    css: "./assets/nhsbt_report_theme.css"
+    toc: true
+    toc-location: left
+    # Title options
+    title-block-banner: '#005EB8'
+    title-block-banner-color: '#ffffff'
+    backgroundcolor: '#f0f4f5'
+    # Set font
+    mainfont: 'Open Sans'
+    ## Optional
+    embed-resources: true
+    code-annotations: hover
+    fig-width: 6
+    fig-asp: 0.618
+#execute:
+  #echo: false
+  #warning: false
+include-in-header:
+  - text: |
+     <link rel = "shortcut icon" href = "./assets/favicon.ico" />
+bibliography: ref.bib
+---
+
+# Some Words
+
+{{< lipsum 1 >}}
+
+# Some Code
+
+I would recommend reading @von2007theory. 
+
+{{< lipsum 1 >}}
+
+```{r}
+x <- 1
+y <- 2
+
+x + y
+```
+
+{{< lipsum 1 >}}
